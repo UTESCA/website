@@ -10,7 +10,7 @@ export function reportWebVitals(metric) {
   console.log(metric);
 }
 
-function MyApp({ Component, pageProps }:AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }:AppProps) {
   return (
     <>
       <Head>
-        <title>FinTorch</title>
+        <title>UTESCA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />

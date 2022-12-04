@@ -11,23 +11,12 @@ const Footer = dynamic(() => import("../components/footer/Footer"));
 // const DynamicComponent = dynamic(() =>
 //   import("../components/hello").then((mod) => mod.Hello)
 // );
-const Home: NextPage = () => {
+const Team: NextPage = () => {
   return (
     <main className="w-screen h-full bg-transparent relative body-container">
       <Suspense fallback={<div>Loading...</div>}>
         <Nav>
-          <Suspense fallback={<div>Loading...</div>}>
-            <About />
-          </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
-            <Project />
-          </Suspense>
-          {/* <Suspense fallback={<div>Loading...</div>}>
-              <Events />
-            </Suspense> */}
-          <Suspense fallback={<div>Loading...</div>}>
-            <Map />
-          </Suspense>
+          US
           <Suspense fallback={<div>Loading...</div>}>
             <Footer />
           </Suspense>
@@ -37,4 +26,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Team;

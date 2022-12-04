@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-const GoTop:NextPage = () => {
+const GoTop: NextPage = () => {
   return (
     <div>
       <button className="relative group">

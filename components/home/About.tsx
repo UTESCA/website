@@ -1,103 +1,86 @@
 import type { NextPage } from "next";
-import Image from 'next/image'
-import torontoPic from '../../public/assets/toronto.jpg'
+import Image from "next/image";
+import torontoPic from "../../public/assets/toronto.jpg";
 import SquareButton from "../buttons/SquareButton";
-const About:NextPage = () => {
+import AboutCard from "../cards/AboutCard";
+const About: NextPage = () => {
+  const aboutPoints = [
+    {
+      name: "About Point 1",
+      description: "About Description 1",
+      link: "/",
+    },
+    {
+      name: "About Point 2",
+      description: "About Description 2",
+      link: "/",
+    },
+    {
+      name: "About Point 3",
+      description: "About Description 3",
+      link: "/",
+    },
+  ];
   return (
     <div>
-<section className="text-gray-700 body-font">
-  <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" data-aos="fade-up-right">
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-        University of Toronto
-        <br className="inline-block"/>
-        Engineering Student Consulting Associatoin
-      </h1>
-      <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div className="flex justify-center gap-5">
-        <SquareButton colour="rose" text={<div>aaa</div>} />
-        <SquareButton colour="rose" text="Join Us" />
-      </div>
-    </div>
-    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" data-aos="fade-up-left">
-      <Image className="object-cover object-center rounded" alt="hero" src={torontoPic}/>
-    </div>
-  </div>
-</section>
-<section className="text-gray-700 body-font border-t border-gray-200">
-    <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
-        <h2 className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1" data-aos="zoom-in-up">ABOUT US</h2>
-        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900" data-aos="zoom-in-up">What UTESCA do</h1>
-        </div>
-        <div className="flex flex-wrap -m-4" data-aos="fade-up">
-            <div className="p-4 md:w-1/3">
-                <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-rose-500 text-white flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
-                    </div>
-                    <h2 className="text-gray-900 text-lg title-font font-medium">Point 1</h2>
-                </div>
-                <div className="flex-grow">
-                    <p className="leading-relaxed text-base">Description goes here.</p>
-                    <a className="mt-3 text-rose-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                    </a>
-                </div>
-                </div>
+      <section className="text-gray-700 body-font">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div
+            className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+            data-aos="fade-up-right"
+          >
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+              University of Toronto
+              <br className="inline-block" />
+              Engineering Student Consulting Associatoin
+            </h1>
+            <p className="mb-8 leading-relaxed">Description 1</p>
+            <div className="flex justify-center gap-5">
+              <SquareButton colour="rose" text={<div>Button 1</div>} />
+              <SquareButton colour="rose" text={<div>Button 2 Join Us</div>} />
             </div>
-            <div className="p-4 md:w-1/3">
-                <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-rose-500 text-white flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    </div>
-                    <h2 className="text-gray-900 text-lg title-font font-medium">Point 2</h2>
-                </div>
-                <div className="flex-grow">
-                    <p className="leading-relaxed text-base">Description goes here.</p>
-                    <a className="mt-3 text-rose-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                    </a>
-                </div>
-                </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-                <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-rose-500 text-white flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <circle cx="6" cy="6" r="3"></circle>
-                        <circle cx="6" cy="18" r="3"></circle>
-                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                    </svg>
-                    </div>
-                    <h2 className="text-gray-900 text-lg title-font font-medium">Point 3</h2>
-                </div>
-                <div className="flex-grow">
-                    <p className="leading-relaxed text-base">Description goes here</p>
-                    <a className="mt-3 text-rose-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                    </a>
-                </div>
-            </div>
+          </div>
+          <div
+            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+            data-aos="fade-up-left"
+          >
+            <Image
+              className="object-cover object-center rounded"
+              alt="hero"
+              src={torontoPic}
+            />
+          </div>
         </div>
+      </section>
+      <section className="text-gray-700 body-font border-t border-gray-200">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h2
+              className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1"
+              data-aos="zoom-in-up"
+            >
+              ABOUT US
+            </h2>
+            <h1
+              className="sm:text-3xl text-2xl font-medium title-font text-gray-900"
+              data-aos="zoom-in-up"
+            >
+              What UTESCA do
+            </h1>
+          </div>
+          <div className="flex flex-wrap -m-4" data-aos="fade-up">
+            {aboutPoints.map((aboutPoint) => (
+              <AboutCard
+                key={aboutPoint.name}
+                link={aboutPoint.link}
+                name={aboutPoint.name}
+                description={aboutPoint.description}
+              />
+            ))}
+          </div>
         </div>
-    </div>
-    </section>
-{/*
+      </section>
+      {/*
 <section className="text-gray-700 body-font border-t border-gray-200">
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
@@ -708,10 +691,10 @@ const About:NextPage = () => {
     </div>
   </div>
 </footer> */}
-{/* <a href="https://github.com/mertJF/tailblocks" className="rounded-full w-12 h-12 bg-gray-100 fixed bottom-0 right-0 flex items-center justify-center text-gray-800 mr-8 mb-8 shadow-sm border-gray-300 border" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      {/* <a href="https://github.com/mertJF/tailblocks" className="rounded-full w-12 h-12 bg-gray-100 fixed bottom-0 right-0 flex items-center justify-center text-gray-800 mr-8 mb-8 shadow-sm border-gray-300 border" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
   </svg></a> */}
-  </div>
+    </div>
   );
 };
 export default About;
