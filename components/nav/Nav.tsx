@@ -1,21 +1,15 @@
 import React, {ReactNode, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/assets/logo.png";
 import type { NextPage } from "next";
 import cn from 'clsx';
-interface Props {
-  children: ReactNode | ReactNode[];
-}
-const Nav:NextPage = ({children}:Props) => {
+const Nav:NextPage = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const toggleMobileBar = () => {
 	setMobileOpen(!mobileOpen);
   };
   return (
-    <div className="relative min-h-screen">
-
-  {/* <!-- mobile menu bar --> */}
+<div>
   <div className="bg-white text-rose-500 flex justify-between p-4 fixed lg:static w-full">
     <a href="#" className="flex items-center space-x-5 px-4">
       <span className="text-2xl font-extrabold ">UTESCA</span>
@@ -73,11 +67,7 @@ const Nav:NextPage = ({children}:Props) => {
 		</a>
 		</nav>
 	</div>
-  {/* <!-- content --> */}
-  <div className="flex-1 p-6 ">
-    {children}
-  </div>
-</div>
+	</div>
     );
 };
 
