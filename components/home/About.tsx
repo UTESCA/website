@@ -15,7 +15,7 @@ const About:NextPage = () => {
       </h1>
       <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
       <div className="flex justify-center gap-5">
-        <SquareButton colour="rose" text="Learn More" />
+        <SquareButton colour="rose" text={<div>aaa</div>} />
         <SquareButton colour="rose" text="Join Us" />
       </div>
     </div>

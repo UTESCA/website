@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 interface Props {
   colour: string
-  text: string
+  text: any
 }
 const SquareButton:NextPage<Props> = ({colour, text}: Props) => {
     switch (colour) {

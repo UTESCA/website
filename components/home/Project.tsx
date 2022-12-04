@@ -4,7 +4,6 @@ import torontoPic from '../../public/assets/toronto.jpg'
 
 const Project:NextPage = () => {
   return (
-    <div>
     <section className="text-gray-700 body-font border-t border-gray-200">
     <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
@@ -55,7 +54,6 @@ const Project:NextPage = () => {
         </div>
     </div>
     </section>
-  </div>
   );
 };
 export default Project;
