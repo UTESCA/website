@@ -8,4 +8,9 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exporots = {
+  images: {
+    domains: ["flowbite.s3.amazonaws.com"],
+  },
+};
+// module.exports = nextConfig;
