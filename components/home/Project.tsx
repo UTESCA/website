@@ -12,14 +12,37 @@ const Project: NextPage = () => {
   const projects: projectProps[] = [
     {
       image: torontoPic,
-      name: "Project 1",
-      description: "Proj description 1",
+      name: "Functions Creation and Integration in Software",
+      description:
+        "Developing fine-tuning functions in the software used to refine plastic sockets for patients' prosthetics. ",
       link: "https://www.google.com",
     },
     {
       image: torontoPic,
-      name: "Project 2",
-      description: "Proj description 2",
+      name: "Calendar App",
+      description:
+        "Building a fully-featured mobile version for both Android/ IOS users integrating client’s advanced AI triaging and organizational features.",
+      link: "https://www.google.com",
+    },
+    {
+      image: torontoPic,
+      name: "AI Integration Mobile App",
+      description:
+        "Modifying frontend and creating engine to sync calendar events and craft a novel user interface for the app.",
+      link: "https://www.google.com",
+    },
+    {
+      image: torontoPic,
+      name: "Scope 3 Carbon Emissions Research",
+      description:
+        "Conducting an environmental scan of Scope 3 Carbon emissions produced by the UHN hospitals and facilities and building a tool to estimate the Scope 3 Carbon emissions given a range of factors and costs.",
+      link: "https://www.google.com",
+    },
+    {
+      image: torontoPic,
+      name: "A Study of Making Hospitals & Research Facilities More Resilient Towards Power Outages.",
+      description:
+        "Developing an action plan on making the UHN hospitals & research facilities more resilient towards power outages.",
       link: "https://www.google.com",
     },
   ];
