@@ -260,7 +260,7 @@ const Footer: NextPage = () => {
               </a>
             </p>
             <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
-              Our Slogen
+              Engineering for community impact, career growth, and the future
             </span>
           </div>
         </div>
