@@ -15,12 +15,11 @@ const Team: NextPage = () => {
   return (
     <main className="w-screen h-full bg-transparent relative body-container">
       <Suspense fallback={<div>Loading...</div>}>
-        <Nav>
-          US
-          <Suspense fallback={<div>Loading...</div>}>
-            <Footer />
-          </Suspense>
-        </Nav>
+        <Nav />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
       </Suspense>
     </main>
   );

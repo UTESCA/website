@@ -15,23 +15,19 @@ const Home: NextPage = () => {
   return (
     <main className="w-screen h-full bg-transparent relative body-container">
       <Suspense fallback={<div>Loading...</div>}>
-        <Nav>
-          <Suspense fallback={<div>Loading...</div>}>
-            <About />
-          </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
-            <Project />
-          </Suspense>
-          {/* <Suspense fallback={<div>Loading...</div>}>
-              <Events />
-            </Suspense> */}
-          <Suspense fallback={<div>Loading...</div>}>
-            <Map />
-          </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
-            <Footer />
-          </Suspense>
-        </Nav>
+        <Nav />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <About />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Project />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Map />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
       </Suspense>
     </main>
   );

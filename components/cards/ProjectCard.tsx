@@ -17,12 +17,12 @@ const ProjectCard: NextPage<Props> = ({ image, name, description, link }) => {
         </h2>
         <p className="text-gray-600 mb-2">{description}</p>
         <div>
-          <Link
+          {/* <Link
             href={link}
             className="text-green-600 hover:text-green-500 text-small"
           >
             Read more 👉
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
