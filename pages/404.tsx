@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import SquareButton from "../components/buttons/SquareButton";
 
-const Error = ({ statusCode }) => {
+export default function Custom404() {
   const arrow = (
     <div className="flex items-center space-x-2">
       <svg
@@ -24,21 +24,14 @@ const Error = ({ statusCode }) => {
     <div>
       <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0">
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center lg:px-2 xl:px-0 text-center">
-          {statusCode ? (
-            <div>
-              <p className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-wider text-rose-500">
-                {statusCode}
-              </p>
-              <p className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-rose-500 mt-2">
-                Some Error Occurs
-              </p>
-            </div>
-          ) : (
-            <p className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-rose-300 mt-2">
-              An Error Occurs on the Client side
+          <div>
+            <p className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-wider text-rose-500">
+              404
             </p>
-          )}
-
+            <p className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-rose-500 mt-2">
+              Some Error Occurs
+            </p>
+          </div>
           <p className="text-lg md:text-xl lg:text-2xl text-rose-500 my-12">
             Sorry, the page you are looking for could not be found.
           </p>
@@ -238,11 +231,4 @@ const Error = ({ statusCode }) => {
       </div>
     </div>
   );
-};
-
-Error.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-  return { statusCode };
-};
-
-export default Error;
+}

@@ -6,11 +6,7 @@ const Map: NextPage = () => {
         <iframe
           width="100%"
           height="100%"
-          frameBorder="0"
-          marginHeight={0}
-          marginWidth={0}
           title="map"
-          scrolling="no"
           src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=bahen+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
       </div>
@@ -32,7 +28,7 @@ const Map: NextPage = () => {
             placeholder="Message"
           ></textarea>
           <button className="text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg">
-            Button
+            Send
           </button>
           <p className="text-xs text-gray-500 mt-3">Additional Message.</p>
         </div>
