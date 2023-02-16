@@ -17,7 +17,7 @@ const MemberCard: NextPage<MemberCardProps> = ({ name, position, image }) => {
         alt="Person"
       />
       <div className="flex flex-col justify-center mt-2">
-        <p className="text-lg font-bold">{name}</p>
+        <p className="text-xl font-bold">{name}</p>
         <p className="mb-4 text-xs text-gray-800">{position}</p>
       </div>
     </div>
