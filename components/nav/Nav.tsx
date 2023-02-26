@@ -23,7 +23,7 @@ const Nav: NextPage = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 60;
+      const show = window.scrollY > 30;
       if (show) {
         setNavTransparent(false);
       } else {
@@ -45,25 +45,46 @@ const Nav: NextPage = () => {
               navTransparent && router.pathname === "/",
             ["static "]: router.pathname != "/",
             ["fixed "]: router.pathname === "/",
-            ["bg-gradient-to-r from-teal-500 to-cyan-600 "]:
-              router.pathname === "/user",
           }) +
           "bg-rose-700 text-white flex items-center lg:justify-around justify-between p-4 static  w-full z-30 transition duration-300"
         }
       >
         <Link href="/" className="flex items-center space-x-5 px-4">
-          {navTransparent && router.pathname === "/" ? (
-            <Image src={Logo} alt="logo" height={50} priority={true} />
-          ) : (
+          <div className="hidden lg:block ">
+            {navTransparent && router.pathname === "/" ? (
+              <Image src={Logo} alt="logo" height={50} priority={true} />
+            ) : (
+              <Image src={LogoWhite} alt="logo" height={50} priority={true} />
+            )}
+          </div>
+          <div className="block lg:hidden ">
             <Image src={LogoWhite} alt="logo" height={50} priority={true} />
-          )}
+          </div>
         </Link>
-        {/* <div className="lg:hidden" onClick={toggleMobileBar}>
+        <div className="lg:hidden" onClick={toggleMobileBar}>
           <MenuItem />
         </div>
         <div className="hidden lg:block">
-          <NavItems items={menuItem} />
-        </div> */}
+          <div className="flex gap-4">
+            {menuItem.map((item, index) => (
+              <Link
+                key={index}
+                href={item.link}
+                className={
+                  cn({
+                    ["hover:text-rose-700 hover:bg-white text-white"]:
+                      !navTransparent || router.pathname != "/",
+                    ["hover:text-white hover:bg-rose-700 text-rose-700"]:
+                      navTransparent && router.pathname === "/",
+                  }) +
+                  " font-bold	flex-col px-4 py-2 items-center space-x-6 text-xl group rounded transition duration-500"
+                }
+              >
+                <button>{item.name}</button>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div

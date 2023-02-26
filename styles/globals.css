@@ -8,8 +8,8 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth !important;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: visible;
+
 }
 
 a {
