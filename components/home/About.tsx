@@ -7,7 +7,7 @@ const About: NextPage = () => {
   const aboutPoints = [
     {
       name: "Professional Development Events",
-      description: "Learn more aboutg the career on consulting",
+      description: "Learn more about the career on consulting",
       link: "/",
       icon: (
         <svg
@@ -45,8 +45,8 @@ const About: NextPage = () => {
   ];
   return (
     <div>
-      <section className="text-gray-700 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="text-gray-700 body-font">
+        <div className="container mx-auto flex px-20 py-[130px] md:flex-row flex-col items-center">
           <div
             className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
             data-aos="fade-up-right"
@@ -77,8 +77,8 @@ const About: NextPage = () => {
             />
           </div>
         </div>
-      </section>
-      <section className="text-gray-700 body-font border-t border-gray-200">
+      </div>
+      <div className="text-gray-700 body-font border-t border-gray-200">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h2
@@ -109,7 +109,7 @@ const About: NextPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

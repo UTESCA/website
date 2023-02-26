@@ -7,12 +7,13 @@ type MemberCardProps = {
   position: string;
   image: any;
 };
-
 const MemberCard: NextPage<MemberCardProps> = ({ name, position, image }) => {
   return (
     <div>
-      <img
+      <Image
         className="object-cover w-24 h-24 rounded-full shadow"
+        width={96}
+        height={96}
         src={image}
         alt="Person"
       />
