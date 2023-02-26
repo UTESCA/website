@@ -5,9 +5,9 @@ const Nav = dynamic(() => import("../components/nav/Nav"));
 const About = dynamic(() => import("../components/home/About"));
 const Project = dynamic(() => import("../components/home/Project"));
 const Events = dynamic(() => import("../components/home/Events"));
+const Sponsors = dynamic(() => import("../components/home/Sponsors"));
 const Map = dynamic(() => import("../components/home/Map"));
 const Footer = dynamic(() => import("../components/footer/Footer"));
-
 // const DynamicComponent = dynamic(() =>
 //   import("../components/hello").then((mod) => mod.Hello)
 // );
@@ -22,6 +22,9 @@ const Home: NextPage = () => {
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Project />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Sponsors />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Map />

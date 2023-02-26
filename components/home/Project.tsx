@@ -71,7 +71,10 @@ const Project: NextPage = () => {
             Current Project from 2022-2023
           </h1>
         </div>
-        <div className="flex flex-wrap -m-4" data-aos="fade-up">
+        <div
+          className="flex justify-center items-center flex-wrap -m-4"
+          data-aos="fade-up"
+        >
           {projects.map((project) => (
             <ProjectCard
               image={project.image}
