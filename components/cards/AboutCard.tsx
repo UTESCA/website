@@ -15,7 +15,7 @@ const AboutCard: NextPage<Props> = ({ name, description, link, icon }) => {
           <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-rose-500 text-white flex-shrink-0">
             {icon}
           </div>
-          <h2 className="text-gray-900 text-lg title-font font-medium">
+          <h2 className="text-gray-900 text-2xl font-bold title-font">
             {name}
           </h2>
         </div>
