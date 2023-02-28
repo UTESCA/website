@@ -15,6 +15,20 @@ type projectProps = {
 const Project: NextPage = () => {
   const projects: projectProps[] = [
     {
+      image: CER,
+      name: "Scope 3 Carbon Emissions Research",
+      description:
+        "Conducting an environmental scan of Scope 3 Carbon emissions produced by the UHN hospitals and facilities and building a tool to estimate the Scope 3 Carbon emissions given a range of factors and costs.",
+      link: "https://www.google.com",
+    },
+    {
+      image: HR,
+      name: "A Study of Making Hospitals & Research Facilities More Resilient Towards Power Outages.",
+      description:
+        "Developing an action plan on making the UHN hospitals & research facilities more resilient towards power outages.",
+      link: "https://www.google.com",
+    },
+    {
       image: FCI,
       name: "Functions Creation and Integration in Software",
       description:
@@ -33,20 +47,6 @@ const Project: NextPage = () => {
       name: "AI Integration Mobile App",
       description:
         "Modifying frontend and creating engine to sync calendar events and craft a novel user interface for the app.",
-      link: "https://www.google.com",
-    },
-    {
-      image: CER,
-      name: "Scope 3 Carbon Emissions Research",
-      description:
-        "Conducting an environmental scan of Scope 3 Carbon emissions produced by the UHN hospitals and facilities and building a tool to estimate the Scope 3 Carbon emissions given a range of factors and costs.",
-      link: "https://www.google.com",
-    },
-    {
-      image: HR,
-      name: "A Study of Making Hospitals & Research Facilities More Resilient Towards Power Outages.",
-      description:
-        "Developing an action plan on making the UHN hospitals & research facilities more resilient towards power outages.",
       link: "https://www.google.com",
     },
   ];
@@ -72,7 +72,7 @@ const Project: NextPage = () => {
           </h1>
         </div>
         <div
-          className="flex justify-center items-center flex-wrap -m-4"
+          className="flex justify-center items-center flex-wrap -m-4 "
           data-aos="fade-up"
         >
           {projects.map((project) => (
