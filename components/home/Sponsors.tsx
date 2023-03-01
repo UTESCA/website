@@ -25,7 +25,7 @@ const Sponsors: NextPage = () => {
           </h1>
         </div>
         <div className="mx-auto max-w-screen-xl">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="col-span-1 flex items-center justify-center md:col-span-2 lg:col-span-1">
               <Image
                 className="h-12 fill-current text-gray-400 hover:text-black"
