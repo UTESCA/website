@@ -15,13 +15,13 @@ const Sponsors: NextPage = () => {
             className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1"
             data-aos="zoom-in-up"
           >
-            PROJECTS
+            SPONSORS
           </h2>
           <h1
             className="sm:text-3xl text-2xl font-medium title-font text-gray-900"
             data-aos="zoom-in-up"
           >
-            Current Project from 2022-2023
+            Our Sponsors
           </h1>
         </div>
         <div className="mx-auto max-w-screen-xl">
@@ -31,6 +31,7 @@ const Sponsors: NextPage = () => {
                 className="h-12 fill-current text-gray-400 hover:text-black"
                 src={UHN_Logo}
                 alt="UHN Logo"
+                data-aos="zoom-in-up"
               ></Image>
             </div>
             <div className="col-span-1 flex items-center justify-center md:col-span-2 lg:col-span-1">
@@ -38,6 +39,7 @@ const Sponsors: NextPage = () => {
                 className="h-12 fill-current text-gray-400 hover:text-black"
                 src={aikomail}
                 alt="Aikomail Logo"
+                data-aos="zoom-in-up"
               ></Image>
             </div>
             {/* <div className="col-span-1 flex items-center justify-center md:col-span-2 lg:col-span-1">
@@ -52,6 +54,7 @@ const Sponsors: NextPage = () => {
                 className="h-12 fill-current text-gray-400 hover:text-black"
                 src={Happenin}
                 alt="Happenin Logo"
+                data-aos="zoom-in-up"
               ></Image>
             </div>
             {/* <div className="col-span-1 flex items-center justify-center md:col-span-2 lg:col-span-1">
