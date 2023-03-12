@@ -105,7 +105,7 @@ const corporateRelations = [
   {
     name: "Umar Makhdoom",
     position: "Director",
-    image: "",
+    image: "/assets/member-pfps/Umar-Makhdoom-CR-Director.jpg",
   },
   {
     name: "Amritha Tayalur Jagadeesh",

@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import torontoPic from "../../public/assets/toronto.jpg";
-import SquareButton from "../buttons/SquareButton";
-import AboutCard from "../cards/AboutCard";
+import Title from "../decoration/Title";
 import Link from "next/link";
 const About: NextPage = () => {
   const aboutPoints = [
@@ -138,7 +137,7 @@ const About: NextPage = () => {
       </div>
       <div className="text-gray-700 body-font border-t border-gray-200">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10">
             <h2
               className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1"
               data-aos="zoom-in-up"
@@ -152,19 +151,28 @@ const About: NextPage = () => {
               What does UTESCA do
             </h1>
           </div>
-          <div
-            className="flex flex-wrap -m-4 justify-around"
-            data-aos="fade-up"
-          >
-            {aboutPoints.map((aboutPoint) => (
-              <AboutCard
-                key={aboutPoint.name}
-                link={aboutPoint.link}
-                name={aboutPoint.name}
-                description={aboutPoint.description}
-                icon={aboutPoint.icon}
-              />
-            ))}
+          <div className="">
+            <div className="bg-gray-200 rounded-lg p-5 m-5" data-aos="fade-in">
+              <Title text="Professional Development Event" />
+              <div className="lg:col-span-3 md:col-span-4 text-lg text-black px-10 pt-10">
+                Providing students with engineering and management consultancy
+                expertise, building mentorships with consultants through
+                networking opportunities, and bridging the gap between academia
+                and industry with our professional development events.
+              </div>
+            </div>
+            <div className="bg-gray-200 rounded-lg p-5 m-5" data-aos="fade-in">
+              <Title text="Consulting Engineering Project (CEP)" />
+              <div className="lg:col-span-3 md:col-span-4 text-lg text-black px-10 pt-10">
+                Helping engineering students create values and impacts for local
+                businesses with projects spanning software automation,
+                artificial intelligence, technology, healthcare, sustainability,
+                data analytics, and more. Teams of 4-5 students pairing with a
+                professional consultant offer a range of technical skills to
+                solve technical engineering problems and develop the best
+                engineering-based solution with our pro-bono service.
+              </div>
+            </div>
           </div>
         </div>
       </div>

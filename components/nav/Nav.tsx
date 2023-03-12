@@ -93,10 +93,10 @@ const Nav: NextPage = () => {
             ["-translate-x-full "]: !mobileOpen,
             ["translate-x-0 "]: mobileOpen,
           }) +
-          "lg:hidden fixed top-0 sidebar bg-gradient-to-r from-emerald-800 to-emerald-600 opacity-95 w-64 space-y-6 px-2 py-6 inset-y-0 left-0 transform z-50 transition duration-200 ease-in-out overflow-scroll scrollbar-none"
+          "lg:hidden fixed top-0 sidebar bg-gradient-to-r from-rose-800 to-rose-600 opacity-95 w-64 space-y-6 px-2 py-6 inset-y-0 left-0 transform z-50 transition duration-200 ease-in-out overflow-scroll scrollbar-none"
         }
       >
-        <nav className="text-emerald-300 divide-y font-light">
+        <nav className="text-rose-200 divide-y font-light">
           <div>
             {menuItem.map((item, index) => (
               <MobileNavItems
@@ -106,13 +106,6 @@ const Nav: NextPage = () => {
                 icon={item.icon}
               />
             ))}
-          </div>
-          <div>
-            <MobileNavItems
-              name={"Login"}
-              link={"/login"}
-              icon={menuItem[0].icon}
-            />
           </div>
         </nav>
       </div>

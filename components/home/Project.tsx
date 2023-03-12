@@ -72,7 +72,7 @@ const Project: NextPage = () => {
           </h1>
         </div>
         <div
-          className="flex justify-center items-center flex-wrap -m-4 "
+          className="flex justify-center items-center flex-wrap"
           data-aos="fade-up"
         >
           {projects.map((project) => (

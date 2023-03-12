@@ -6,7 +6,7 @@ import HPCO from "../../public/assets/company-logo/HPCO.png";
 import aikomail from "../../public/assets/company-logo/aikomail.svg";
 import Happenin from "../../public/assets/company-logo/Happenin.svg";
 import Softeem from "../../public/assets/company-logo/Softeem.png";
-const Sponsors: NextPage = () => {
+const Clients: NextPage = () => {
   return (
     <section className="text-gray-700 body-font border-t border-gray-200">
       <div className="container mx-auto px-6 py-16">
@@ -15,13 +15,13 @@ const Sponsors: NextPage = () => {
             className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1"
             data-aos="zoom-in-up"
           >
-            SPONSORS
+            CLIENTS
           </h2>
           <h1
             className="sm:text-3xl text-2xl font-medium title-font text-gray-900"
             data-aos="zoom-in-up"
           >
-            Our Sponsors
+            Our Clients
           </h1>
         </div>
         <div className="mx-auto max-w-screen-xl">
@@ -71,4 +71,4 @@ const Sponsors: NextPage = () => {
   );
 };
 
-export default Sponsors;
+export default Clients;
