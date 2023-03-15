@@ -6,6 +6,7 @@ type eventProps = {
   description: any;
   date: string;
   location: string;
+  link: string;
 };
 const eventItem: eventProps[] = [
   {
@@ -23,6 +24,7 @@ const eventItem: eventProps[] = [
     ),
     date: "Friday, March 17 2023, 6:30PM - 8:30PM",
     location: "GB 202",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScLcmNl3n8--WUQaz-PThiI-IRDoIAuD-_2LAtSTBjTpwmlrw/viewform",
   },
 ];
 

@@ -23,6 +23,7 @@ const Events: NextPage = () => {
           return (
             <EventCard
               key={event.name}
+              link={event.link}
               name={event.name}
               description={event.description}
               src={event.src}

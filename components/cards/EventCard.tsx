@@ -1,12 +1,14 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import SquareButton from "../buttons/SquareButton";
 type Props = {
   name: string;
   description: any;
   src: any;
   date: string;
   location: string;
+  link: string;
 };
 // const AboutCard: NextPage<Props> = ({
 //   name,
@@ -57,6 +59,7 @@ const AboutCard: NextPage<Props> = ({
   src,
   date,
   location,
+  link,
 }) => {
   return (
     <div className="relative flex-col md:flex-row flex w-full hover:bg-gray-200 bg-gray-100 rounded-lg transition duration-300 justify-center items-center">
@@ -66,6 +69,9 @@ const AboutCard: NextPage<Props> = ({
         <p className="text-rose-600 mb-2">{date}</p>
         <p className="text-rose-600 mb-2">{location}</p>
         <p className="text-gray-600 mb-2">{description}</p>
+        <Link href={link} target="_blank">
+          <SquareButton colour="rose" text={<div>Register Now!</div>} />
+        </Link>
       </div>
     </div>
   );
