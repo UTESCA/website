@@ -18,13 +18,13 @@ const Home: NextPage = () => {
         <Nav />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
+        <Events />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <About />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Project />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Events />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Clients />
