@@ -59,7 +59,7 @@ const AboutCard: NextPage<Props> = ({
   location,
 }) => {
   return (
-    <div className="relative  flex w-full hover:bg-gray-200 bg-gray-100 rounded-lg transition duration-300">
+    <div className="relative flex-col md:flex-row flex w-full hover:bg-gray-200 bg-gray-100 rounded-lg transition duration-300 justify-center items-center">
       <Image alt="project2" src={src} className="rounded-l-lg" width={250} />
       <div className="p-6">
         <h2 className="font-bold mb-2 text-xl text-gray-800">{name}</h2>
