@@ -14,9 +14,9 @@ const Home: NextPage = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Nav />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Events />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
         <About />
       </Suspense>

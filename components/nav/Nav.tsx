@@ -72,9 +72,9 @@ const Nav: NextPage = () => {
                 href={item.link}
                 className={
                   cn({
-                    ["hover:text-rose-700 hover:bg-white text-white"]:
+                    ["hover:text-rose-500 hover:bg-white text-white"]:
                       !navTransparent || router.pathname != "/",
-                    ["hover:text-white hover:bg-rose-700 text-rose-700"]:
+                    ["hover:text-white hover:bg-rose-500 text-rose-500"]:
                       navTransparent && router.pathname === "/",
                   }) +
                   " font-bold	flex-col px-4 py-2 items-center space-x-6 text-xl group rounded transition duration-500"
