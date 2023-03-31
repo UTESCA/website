@@ -48,7 +48,7 @@ const mediaMarketing = [
   {
     name: "Betty Wang",
     position: "Graphics Designer",
-    image: "",
+    image: "/assets/member-pfps/betty-wang.jpg",
   },
   {
     name: "Mehak Afzal",

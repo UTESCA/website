@@ -8,9 +8,6 @@ const Events = dynamic(() => import("../components/home/Events"));
 const Clients = dynamic(() => import("../components/home/Clients"));
 const Map = dynamic(() => import("../components/home/Map"));
 const Footer = dynamic(() => import("../components/footer/Footer"));
-// const DynamicComponent = dynamic(() =>
-//   import("../components/hello").then((mod) => mod.Hello)
-// );
 const Home: NextPage = () => {
   return (
     <main className="w-screen h-full bg-transparent relative body-container">
