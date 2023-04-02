@@ -37,7 +37,7 @@ const Team: NextPage = () => {
         </div>
 
         <div
-          className="grid gap-10 mx-auto py-10 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
+          className="grid gap-10 mx-auto py-10 grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
           data-aos="fade-up-right"
         >
           {presidents.map((member, idx) => (
@@ -59,7 +59,7 @@ const Team: NextPage = () => {
           </h1>
         </div>
         <div
-          className="grid gap-10 mx-auto py-10 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
+          className="grid gap-10 mx-auto py-10 grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
           data-aos="fade-up-right"
         >
           {mediaMarketing.map((member, idx) => (
@@ -81,7 +81,7 @@ const Team: NextPage = () => {
           </h1>
         </div>
         <div
-          className="grid gap-10 mx-auto py-10 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
+          className="grid gap-10 mx-auto py-10 grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
           data-aos="fade-up-right"
         >
           {internalEnagements.map((member, idx) => (
@@ -93,75 +93,75 @@ const Team: NextPage = () => {
             />
           ))}
         </div>
-      </div>
 
-      <div
-        className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg"
-        data-aos="fade-up-right"
-      >
-        <h1 className="font-bold leading-tight text-2xl mt-0 mb-2">
-          Corporate Relations
-          <hr className="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700" />
-        </h1>
-      </div>
-      <div
-        className="grid gap-10 mx-auto py-10 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
-        data-aos="fade-up-right"
-      >
-        {corporateRelations.map((member, idx) => (
-          <MemberCard
-            key={idx}
-            name={member.name}
-            position={member.position}
-            image={member.image}
-          />
-        ))}
-      </div>
+        <div
+          className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg"
+          data-aos="fade-up-right"
+        >
+          <h1 className="font-bold leading-tight text-2xl mt-0 mb-2">
+            Corporate Relations
+            <hr className="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700" />
+          </h1>
+        </div>
+        <div
+          className="grid gap-10 mx-auto py-10 grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
+          data-aos="fade-up-right"
+        >
+          {corporateRelations.map((member, idx) => (
+            <MemberCard
+              key={idx}
+              name={member.name}
+              position={member.position}
+              image={member.image}
+            />
+          ))}
+        </div>
 
-      <div
-        className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg"
-        data-aos="fade-up-right"
-      >
-        <h1 className="font-bold leading-tight text-2xl mt-0 mb-2">
-          Finance
-          <hr className="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700" />
-        </h1>
-      </div>
-      <div
-        className="grid gap-10 mx-auto py-10 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
-        data-aos="fade-up-right"
-      >
-        {finance.map((member, idx) => (
-          <MemberCard
-            key={idx}
-            name={member.name}
-            position={member.position}
-            image={member.image}
-          />
-        ))}
-      </div>
+        <div
+          className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg"
+          data-aos="fade-up-right"
+        >
+          <h1 className="font-bold leading-tight text-2xl mt-0 mb-2">
+            Finance
+            <hr className="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700" />
+          </h1>
+        </div>
+        <div
+          className="grid gap-10 mx-auto py-10 grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
+          data-aos="fade-up-right"
+        >
+          {finance.map((member, idx) => (
+            <MemberCard
+              key={idx}
+              name={member.name}
+              position={member.position}
+              image={member.image}
+            />
+          ))}
+        </div>
 
-      <div
-        className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg"
-        data-aos="fade-up-right"
-      >
-        <h1 className="font-bold leading-tight text-2xl mt-0 mb-2">
-          Web Team
-          <hr className="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700" />
-        </h1>
-      </div>
-      <div
-        className="grid gap-10 mx-auto py-10 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
-        data-aos="fade-up-right"
-      >
-        {webTeam.map((member, idx) => (
-          <MemberCard
-            key={idx}
-            name={member.name}
-            position={member.position}
-            image={member.image}
-          />
-        ))}
+        <div
+          className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg"
+          data-aos="fade-up-right"
+        >
+          <h1 className="font-bold leading-tight text-2xl mt-0 mb-2">
+            Web Team
+            <hr className="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700" />
+          </h1>
+        </div>
+        <div
+          className="grid gap-10 mx-auto py-10 grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg"
+          data-aos="fade-up-right"
+        >
+          {webTeam.map((member, idx) => (
+            <MemberCard
+              key={idx}
+              name={member.name}
+              position={member.position}
+              image={member.image}
+            />
+          ))}
+        </div>
       </div>
 
       <Suspense fallback={<div>Loading...</div>}>
