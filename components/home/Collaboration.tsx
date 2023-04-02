@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
-import ClientsData from "../../data/ClientsData";
-const Clients: NextPage = () => {
+import CollaborationData from "../../data/CollaborationData";
+const Collaboration: NextPage = () => {
   return (
     <section className="text-gray-700 body-font border-t border-gray-200">
       <div className="container mx-auto px-6 py-16">
@@ -11,18 +11,18 @@ const Clients: NextPage = () => {
             className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1"
             data-aos="zoom-in-up"
           >
-            CLIENTS
+            COLLABORATIONS
           </h2>
           <h1
             className="sm:text-3xl text-2xl font-medium title-font text-gray-900"
             data-aos="zoom-in-up"
           >
-            Our Clients
+            Our Collaborations
           </h1>
         </div>
         <div className="mx-auto max-w-screen-xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-3">
-            {ClientsData.map((client) => {
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+            {CollaborationData.map((client) => {
               return (
                 <div
                   key={client.name}
@@ -44,4 +44,4 @@ const Clients: NextPage = () => {
   );
 };
 
-export default Clients;
+export default Collaboration;
