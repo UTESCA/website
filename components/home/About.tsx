@@ -152,7 +152,7 @@ const About: NextPage = () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-10">
             <h2
-              className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1"
+              className="text-2xl text-rose-500 tracking-widest font-medium title-font mb-1"
               data-aos="zoom-in-up"
             >
               ABOUT US

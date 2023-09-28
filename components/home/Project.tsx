@@ -59,7 +59,7 @@ const Project: NextPage = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h2
-            className="text-xs text-rose-500 tracking-widest font-medium title-font mb-1"
+            className="text-2xl text-rose-500 tracking-widest font-medium title-font mb-1"
             data-aos="zoom-in-up"
           >
             PROJECTS
@@ -72,7 +72,8 @@ const Project: NextPage = () => {
           </h1>
         </div>
         <div
-          className="flex justify-center items-center flex-wrap"
+          className=" flex flex-wrap justify-center items-stretch"
+          // className=" grid grid-cols-1 md:grid-cols-3 gap-2 items-stretch w-4/5 mx-auto"
           data-aos="fade-up"
         >
           {projects.map((project) => (
