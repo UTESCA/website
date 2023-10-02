@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="MyApp - Here comes your awesome description"
+          content="Welcome to University of Toronto Engineering Student Consulting Association!"
         />
         <meta name="theme-color" content="#0E1116" />
         <link rel="manifest" href="/manifest.json" />
