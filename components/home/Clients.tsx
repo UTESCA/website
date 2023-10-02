@@ -28,12 +28,14 @@ const Clients: NextPage = () => {
                   key={client.name}
                   className="flex items-center justify-center"
                 >
+                  <a href={client.url} target="_blank">
                   <Image
                     className="h-12 fill-current text-gray-400 hover:text-black"
                     src={client.logo}
                     alt={client.name}
                     data-aos="zoom-in-up"
                   ></Image>
+                  </a>
                 </div>
               );
             })}

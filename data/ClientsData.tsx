@@ -6,11 +6,14 @@ import Softeem from "../public/assets/company/clients/Softeem.png";
 type clientProps = {
   name: string;
   logo: any;
+  url: string;
 };
 const clients: clientProps[] = [
   {
     name: "UHN",
     logo: UHN,
+    url: "https://www.uhn.ca/",
+
   },
   //   {
   //     name: "HPCO",
@@ -19,10 +22,12 @@ const clients: clientProps[] = [
   {
     name: "Aikomail",
     logo: aikomail,
+    url: "https://aikomail.com/",
   },
   {
     name: "Happenin",
     logo: Happenin,
+    url: "",
   },
   //   {
   //     name: "Softeem",
