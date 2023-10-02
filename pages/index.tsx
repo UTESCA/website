@@ -12,30 +12,25 @@ const Footer = dynamic(() => import("../components/footer/Footer"));
 const Home: NextPage = () => {
   return (
     <main className="w-screen h-full bg-transparent relative body-container">
-      <Suspense fallback={<div>Loading...</div>}>
-        <Nav />
-      </Suspense>
+  
+        {/* <Nav /> */}
+      
       {/* <Suspense fallback={<div>Loading...</div>}>
         <Events />
       </Suspense> */}
-      <Suspense fallback={<div>Loading...</div>}>
+      
         <About />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      
         <Project />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+     
         <Clients />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      
         <Collaboration />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      
         <Map />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      
         <Footer />
-      </Suspense>
+      
     </main>
   );
 };
