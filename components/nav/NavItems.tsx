@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import cn from "clsx";
-import { useState, useEffect } from "react";
 type ItemProps = {
   name: string;
   link: string;
