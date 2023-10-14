@@ -25,8 +25,9 @@ const Collaboration: NextPage = () => {
         </div>
         <div className="mx-auto max-w-screen-xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
-            {CollaborationData.map((client) => (
+            {CollaborationData.map((client, idx) => (
               <CompanyLogo
+              key={idx}
               name={client.name}
               url={client.url}
               logo={client.logo}/>
