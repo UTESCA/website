@@ -3,6 +3,7 @@ import HPCO from "../public/assets/company/clients/HPCO.png";
 import aikomail from "../public/assets/company/clients/aikomail.svg";
 import Happenin from "../public/assets/company/clients/Happenin.svg";
 import Softeem from "../public/assets/company/clients/Softeem.png";
+
 type clientProps = {
   name: string;
   logo: any;
