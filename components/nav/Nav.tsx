@@ -49,17 +49,39 @@ const Nav: NextPage = () => {
           "bg-rose-700 text-white flex items-center lg:justify-around justify-between p-4 static  w-full z-30 transition duration-300"
         }
       >
-        <Link href="/" className="flex items-center space-x-5 px-4">
-          <div className="hidden lg:block ">
-            {navTransparent && router.pathname === "/" ? (
-              <Image src={Logo} alt="logo" height={50} priority={true} />
-            ) : (
-              <Image src={LogoWhite} alt="logo" height={50} priority={true} />
-            )}
-          </div>
-          <div className="block lg:hidden ">
-            <Image src={LogoWhite} alt="logo" height={50} priority={true} />
-          </div>
+        <Link href="/">
+          <button className="flex items-center space-x-5 px-4">
+            <div className="hidden lg:block ">
+              {navTransparent && router.pathname === "/" ? (
+                // the logo image has a size of 400px in width x 240px in height
+                <Image
+                  src={Logo}
+                  alt="logo"
+                  width={100}
+                  height={60}
+                  priority={true}
+                />
+              ) : (
+                <Image
+                  src={LogoWhite}
+                  alt="logo"
+                  width={100}
+                  height={60}
+                  priority={true}
+                />
+              )}
+            </div>
+
+            <div className="block lg:hidden ">
+              <Image
+                src={LogoWhite}
+                alt="logo"
+                width={100}
+                height={60}
+                priority={true}
+              />
+            </div>
+          </button>
         </Link>
         <div className="lg:hidden" onClick={toggleMobileBar}>
           <MenuItem />
@@ -67,20 +89,20 @@ const Nav: NextPage = () => {
         <div className="hidden lg:block">
           <div className="flex gap-4">
             {menuItem.map((item, index) => (
-              <Link
-                key={index}
-                href={item.link}
-                className={
-                  cn({
-                    ["hover:text-rose-500 hover:bg-white text-white"]:
-                      !navTransparent || router.pathname != "/",
-                    ["hover:text-white hover:bg-rose-500 text-rose-500"]:
-                      navTransparent && router.pathname === "/",
-                  }) +
-                  " font-bold	flex-col px-4 py-2 items-center space-x-6 text-xl group rounded transition duration-500"
-                }
-              >
-                <button>{item.name}</button>
+              <Link key={index} href={item.link}>
+                <button
+                  className={
+                    cn({
+                      ["hover:text-rose-500 hover:bg-white text-white"]:
+                        !navTransparent || router.pathname != "/",
+                      ["hover:text-white hover:bg-rose-500 text-rose-500"]:
+                        navTransparent && router.pathname === "/",
+                    }) +
+                    " font-bold	flex-col px-4 py-2 items-center space-x-6 text-xl group rounded transition duration-500"
+                  }
+                >
+                  {item.name}
+                </button>
               </Link>
             ))}
           </div>

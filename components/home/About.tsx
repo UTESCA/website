@@ -62,12 +62,8 @@ const About: NextPage = () => {
               engineering and management consulting.
             </p>
             <span className="inline-flex justify-start w-auto">
-              <Link
-                href="https://www.facebook.com/uoftesca/"
-                className="ml-3 text-rose-500"
-                target="_blank"
-              >
-                <button>
+              <Link href="https://www.facebook.com/uoftesca/" target="_blank">
+                <button className="ml-3 text-rose-500">
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
@@ -80,12 +76,8 @@ const About: NextPage = () => {
                   </svg>
                 </button>
               </Link>
-              <Link
-                href="https://www.instagram.com/utesca/"
-                className="ml-3 text-rose-500"
-                target="_blank"
-              >
-                <button>
+              <Link href="https://www.instagram.com/utesca/" target="_blank">
+                <button className="ml-3 text-rose-500">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -109,10 +101,10 @@ const About: NextPage = () => {
               </Link>
               <Link
                 href="https://www.linkedin.com/company/utescaconsulting/?originalSubdomain=ca"
-                className="ml-3 text-rose-500"
+                className="ml-3"
                 target="_blank"
               >
-                <button>
+                <button className="ml-3 text-rose-500">
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
