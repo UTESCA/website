@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <main className="w-screen h-full bg-transparent relative body-container">
   
-        {/* <Nav /> */}
+         {/* <Nav />  */}
       
       {/* <Suspense fallback={<div>Loading...</div>}>
         <Events />
