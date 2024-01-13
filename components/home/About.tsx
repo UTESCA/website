@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import torontoPic from "../../public/assets/toronto.jpg";
+import AboutUsCard from "../cards/AboutUsCard";
 import Title from "../decoration/Title";
 import Link from "next/link";
 const About: NextPage = () => {
@@ -156,29 +157,36 @@ const About: NextPage = () => {
               What does UTESCA do
             </h1>
           </div>
-          <div className="">
-            <div className="bg-gray-200 rounded-lg p-5 m-5" data-aos="fade-in">
-              <Title text="Professional Development Event" />
-              <div className="lg:col-span-3 md:col-span-4 text-lg text-black px-10 pt-10">
-                Providing students with engineering and management consultancy
-                expertise, building mentorships with consultants through
-                networking opportunities, and bridging the gap between academia
-                and industry with our professional development events.
-              </div>
-            </div>
-            <div className="bg-gray-200 rounded-lg p-5 m-5" data-aos="fade-in">
-              <Title text="Consulting Engineering Project (CEP)" />
-              <div className="lg:col-span-3 md:col-span-4 text-lg text-black px-10 pt-10">
-                Helping engineering students create values and impacts for local
-                businesses with projects spanning software automation,
-                artificial intelligence, technology, healthcare, sustainability,
-                data analytics, and more. Teams of 4-5 students pairing with a
-                professional consultant offer a range of technical skills to
-                solve technical engineering problems and develop the best
-                engineering-based solution with our pro-bono service.
-              </div>
-            </div>
-          </div>
+          
+          <div className="py-4 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="flex flex-wrap justify-around items-start"> 
+    <div className="w-full md:w-[calc(33.333%-1rem)] p-4"> 
+      <AboutUsCard
+        title="Professional Development Event"
+        description="Build mentorships with consultants through network opportunities and bridge the gap between academia and industry with our professional development events."
+        iconSrc="/assets/about1.svg"
+      />
+    </div>
+    <div className="w-full md:w-[calc(33.333%-1rem)] p-4"> 
+      <AboutUsCard
+        title="Consulting Engineering Project (CEP)"
+        description="Teams of 4-5 students paired with a professional consultant to create values and impacts for local businesses. Solve technical engineering problems and develop the best engineering-based solution with our pro-bono service."
+        iconSrc="/assets/about2.svg"
+      />
+    </div>
+    <div className="w-full md:w-[calc(33.333%-1rem)] p-4"> 
+      <AboutUsCard
+        title="Case competition"
+        description="Train with fellow aspiring consultants on real industry cases and compete with other competition teams at the national and global levels."
+        iconSrc="/assets/about3.svg"
+      />
+    </div>
+  </div>
+</div>
+
+    </div>
+
         </div>
       </div>
     </div>

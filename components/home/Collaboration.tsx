@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import CollaborationData from "../../data/CollaborationData";
+import Link from "next/link";
+import CompanyLogo from "../../components/cards/CompanyLogo";
+
 const Collaboration: NextPage = () => {
   return (
     <section className="text-gray-700 body-font border-t border-gray-200">
@@ -22,21 +25,13 @@ const Collaboration: NextPage = () => {
         </div>
         <div className="mx-auto max-w-screen-xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
-            {CollaborationData.map((client) => {
-              return (
-                <div
-                  key={client.name}
-                  className="flex items-center justify-center"
-                >
-                  <Image
-                    className="h-12 fill-current text-gray-400 hover:text-black"
-                    src={client.logo}
-                    alt={client.name}
-                    data-aos="zoom-in-up"
-                  ></Image>
-                </div>
-              );
-            })}
+            {CollaborationData.map((client, idx) => (
+              <CompanyLogo
+              key={idx}
+              name={client.name}
+              url={client.url}
+              logo={client.logo}/>
+            ))}
           </div>
         </div>
       </div>
